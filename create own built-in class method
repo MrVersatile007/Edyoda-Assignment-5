@@ -1,0 +1,25 @@
+Explanation:
+Use should be able to find the nth power of the x.(i.e x*x*x*x...n times)
+You must implement it using Class
+
+Sample Input:
+x: 10
+n: 2
+
+Sample Output:
+100
+
+########################## CODE STARTS HERE !
+class Tarun:
+    def __init__(self, value_x, power_n):
+        self.x = value_x
+        self.n = power_n
+        
+    def power_fcn(self):
+        x_power_n = self.x**self.n
+        #print("%s to the power of %s is equal to %s" % (self.x, self.n, x_power_n))
+        return x_power_n
+        
+a= Tarun(10,2)  #object a created inside class 'Tarun'
+a.x, a.n        #just to cross check our input x and n
+print(a.power_fcn())   #and the final output for object 'a' implementing power function
